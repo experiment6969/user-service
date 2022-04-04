@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  user_service:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    ports:
+      - "4001:4001"
+    volumes:
+      - ..:/workdir
+      - /workdir/node_modules
+    command: yarn start

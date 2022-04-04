@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.224.3/containers/docker-existing-dockerfile
+{
+  "name": "User Service",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "user_service",
+  "workspaceFolder": "/workdir",
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "GitHub.copilot",
+    "GraphQL.vscode-graphql"
+  ]
+}
